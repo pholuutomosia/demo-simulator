@@ -110,7 +110,9 @@ onMounted(() => {
   frameSelect.value = 1;
   backgroundSelect.value = selectedBackground.value ?? "#fff";
 
-  updateCanvas();
+  setTimeout(() => {
+    updateCanvas();
+  }, 300);
 });
 
 const changeFrame = async () => {
